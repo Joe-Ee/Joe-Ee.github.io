@@ -75,3 +75,6 @@ table tr:nth-child(odd) {
                             background-color: #8A6942;
                             color: #E2D1BD;
                                     }
+.left       {
+                text-align: left;
+            }
