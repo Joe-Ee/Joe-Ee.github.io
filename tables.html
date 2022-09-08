@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" href="styles/default.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="validate.js"></script> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+        <title>The Jovial Ocelot | Joseph Onghena | ITIS 3135| Tables</title>
+    </head>
+    <body>
+        <header>   
+            <h1>Joseph "Joe" Onghena: ITIS3135</h1>
+            <nav class = "topnav">
+                <ul class = "toplist">
+                    <li class = "displayli "><a href = "/" >Home</a></li>
+                    <li class = "displayli">  <a href = "/josephonghena.html">Introduction</a></li>
+                    <li class = "displayli"> <a href = "/contract.html">Contract</a></li>
+                    <li class = "displayli"><a href = "/itis3135/">Itis 3135 Home</a></li>
+                    <li class = "displayli currentli"><a href = "/tables.html">Tables</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Activity #2 - HTML Tables</h2>
+
+            <h3>My Tabular Data</h3>
+            <ol>
+                <li>Robert Iger roberti1@onghenaindustries.com 5</li>
+                <li>Charles Hutchinson charlesh1@onghenaindustries.com 3</li>
+                <li>Brad Hayes bradh1@onghenaindustries.com 2</li>
+                <li>Walter Teague waltert1@onghenaindustries.com 6</li>
+                <li>Jeffery An jefferya1@onghenaindustries.com 1</li>
+                <li>Mary Powers maryp1@onghenaindustries.com 4</li>
+                <li>Bobby Yeager bobbyy1@onghenaindustries.com 6</li>
+                <li>Medina Gomez medinag1@onghenaindustries.com 7</li>
+                <li>Joseph Onghena josepho1@onghenaindustries.com 8</li>
+            </ol>
+
+            <h3>Employee Data Simple Table</h3>
+            <table>
+                <tr>
+                    
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                </tr>
+                <tr>
+
+                    <td>Robert Iger</td>
+                    <td>roberti1@onghenaindustries.com</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Charles Hutchinson</td>
+                    <td>charlesh1@onghenaindustries.com</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Brad Hayes</td>
+                    <td>bradh1@onghenaindustries.com</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Walter Teague</td>
+                    <td>waltert1@onghenaindustries.com</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Jeffery An</td>
+                    <td>jefferya1@onghenaindustries.com</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Mary Powers</td>
+                    <td>maryp1@onghenaindustries.com</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Bobby Yeager</td>
+                    <td>bobbyy1@onghenaindustries.com</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Medina Gomez</td>
+                    <td>medinag1@onghenaindustries.com</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    
+                    <td>Joseph Onghena</td>
+                    <td>josepho1@onghenaindustries.com</td>
+                    <td>8</td>
+                </tr>
+            </table>
+            <h3>Employee Data in Complex Table</h3>
+            <figure>
+            <table >
+                <tr id = "toprow">
+                    <th id = catagory>Category</th>
+                    <th id="name">Name</th>
+                    <th id="email">Email</th>
+                    <th id="service">Years of Service</th>
+                    <th id="salary">Salary</th>
+                </tr>
+                <tr>
+                    <td rowspan="4" headers = "catagory">Software Engineer</td>
+                    <td headers="name">Robert Iger</td>
+                    <td headers="email">roberti1@onghenaindustries.com</td>
+                    <td headers="service">5</td>
+                    <td headers="salary">154,000</td>
+                </tr>
+                <tr>
+                    <td headers="name">Charles Hutchinson</td>
+                    <td headers="email">charlesh1@onghenaindustries.com</td>
+                    <td headers="service">3</td>
+                    <td headers="salary">153,000</td>
+                </tr>
+                <tr>
+                    <td headers="name">Brad Hayes</td>
+                    <td headers="email">bradh1@onghenaindustries.com</td>
+                    <td headers="service">2</td>
+                    <td headers="salary">156,000</td>
+                </tr>
+                <tr>
+                    <td headers="name">Walter Teague</td>
+                    <td headers="email">waltert1@onghenaindustries.com</td>
+                    <td headers="service">6</td>
+                    <td headers="salary">156,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="4" headers = "catagory">System Architect</td>
+                    <td headers="name">Jeffery An</td>
+                    <td headers="email">jefferya1@onghenaindustries.com</td>
+                    <td headers="service">1</td>
+                    <td headers="salary">154,000</td>
+                </tr>
+                <tr>
+                    <td headers="name">Mary Powers</td>
+                    <td headers="email">maryp1@onghenaindustries.com</td>
+                    <td headers="service">4</td>
+                    <td headers="salary">130,000</td>
+                </tr>
+                <tr>
+                    <td headers="name">Bobby Yeager</td>
+                    <td headers="email">bobbyy1@onghenaindustries.com</td>
+                    <td headers="service">6</td>
+                    <td>130,000</td>
+                </tr>
+                <tr>
+                    <td headers="name">Medina Gomez</td>
+                    <td headers="email">medinag1@onghenaindustries.com</td>
+                    <td headers="service">7</td>
+                    <td headers="salary">132,000</td>
+                </tr>
+                <tr>
+                    <td headers = "catagory">CTO</td>
+                    <td headers="name">Joseph Onghena</td>
+                    <td headers="email">josepho1@onghenaindustries.com</td>
+                    <td headers="service">8</td>
+                    <td headers="salary">1,700,000</td>
+                </tr>
+                <tr>
+                    <th colspan = "4" id="totalsalary">Total Annual Salary Budget</th>
+                    <td headers="totalsalary salary">2,865,000</td>
+                </tr>
+            </table>
+            <figcaption>Employee information</figcaption>
+        </figure>
+        </main>
+        <footer>
+            <nav class = "topnav">
+                <ul class = "toplist">
+                    <li class = "displayli"><a href = "/" >Home</a></li>
+                    <li class = "displayli">  <a href = "/josephonghena.html">Introduction</a></li>
+                    <li class = "displayli"> <a href = "/contract.html">Contract</a></li>
+                    <li class = "displayli"><a href = "/itis3135/">Itis 3135 Home</a></li>
+                    <li class = "displayli currentli"><a href = "/tables.html">Tables</a></li>
+                    <li class = "displayli "><a href = "https://webpages.charlotte.edu/jonghena/">UNCC Home Page</a></li>
+                <li class = "displayli"><a href = "https://github.com/Joe-Ee/Joe-Ee.github.io">Github Repo</a></li>
+                <li class = "displayli"><a href = "https://joe-ee.github.io/">Github.io </a></li>
+                <li class = "displayli"><a href = "https://www.freecodecamp.org/JosephOnghena">Free Code Camp</a></li>
+                <li class = "displayli"><a href = "https://www.codecademy.com/profiles/JosephOnghena">Codeacademy</a></li>
+                <li class = "displayli"><a href = "https://www.linkedin.com/in/joseph-onghena-bbb153181/">Linkedin</a></li>
+                </ul>
+            </nav>
+                <p>Designed by Jovial Ocelot©</p>
+            <a href="https://validator.w3.org/check?uri=referer" id = "validation_link_html" style = "text-decoration: none;">
+                <img src="images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML." />
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation_link_css" style = "text-decoration: none;">
+                <img src="images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS." />
+            </a>      
+        </footer>        
+      
+    </body>
+</html>

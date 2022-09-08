@@ -60,3 +60,18 @@ header, footer{
 h2          {
             text-align: center;
             }
+table td, th{
+    border: 1px solid;
+            }
+#toprow     {
+                background-color:#342819;
+                color: #E2D1BD;
+            }
+table tr:nth-child(even) {
+                background-color: #E2D1BD;
+                color: #342819;
+                        }
+table tr:nth-child(odd) {
+                            background-color: #8A6942;
+                            color: #E2D1BD;
+                                    }
