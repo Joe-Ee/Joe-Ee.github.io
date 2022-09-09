@@ -98,3 +98,12 @@ form        {
     margin-left: auto;
     margin-right: auto;
             }
+
+select{
+    background-color: floralwhite;
+    display: block;
+    color: black;
+    border: 2px solid;
+    font-size: 16px;
+    width: 50%;
+}
