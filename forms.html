@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" href="styles/default.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="validate.js"></script> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+        <title>The Jovial Ocelot | Joseph Onghena | ITIS 3135| Forms</title>
+    </head>
+    <body>
+        <header>   
+            
+            <h1>Joseph "Joe" Onghena: ITIS3135</h1>
+       
+            <nav class = "topnav">
+                <ul class = "toplist">
+                    <li class = "displayli "><a href = "/" >Home</a></li>
+                    <li class = "displayli">  <a href = "/josephonghena.html">Introduction</a></li>
+                    <li class = "displayli"> <a href = "/contract.html">Contract</a></li>
+                    <li class = "displayli"><a href = "/itis3135/">Itis 3135 Home</a></li>
+                    <li class = "displayli "><a href = "/tables.html">Tables</a></li>
+                    <li class = "displayli currentli"><a href = "/forms.html">Forms</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="#" autocomplete="off">
+                <label for = "name">Name:</label>
+                <input type = "text" id="name" name="name" required autocomplete="off" placeholder = "name">
+                <label for = "phone">Phone:</label>
+                <input type = "tel" id = "phone" name = "phone" autocomplete="off" placeholder = "000-000-0000">
+                <label for = "email">Email:</label>
+                <input type = "email" id = "email" name = "email" required autocomplete="off" placeholder = "email">
+
+                <label>How should we contact you?</label>
+                <input type="checkbox" id="contact1" name="contact1" value="email">
+                <label for="contact1">Email</label><br>
+                <input type="checkbox" id="contact2" name="contact2" value="call">
+                <label for="contact2">Phone Call</label><br>
+                <input type="checkbox" id="contact3" name="contact3" value="text">
+                <label for="contact3">Text Message</label><br>
+
+                <label>What is your shirt size?</label>
+                <input type="radio" id="small" name="size" value="small" checked = "checked">
+                <label for="small">Small</label>
+                <input type="radio" id="medium" name="size" value="medium">
+                <label for="medium">Medium</label>
+                <input type="radio" id="large" name="size" value="large">
+                <label for="large">Large</label> 
+
+                <input type = "reset">
+                <input type = "submit">
+
+            </form>
+        </main>
+        <footer>
+            <nav class = "topnav">
+                <ul class = "toplist">
+                    <li class = "displayli "><a href = "/" >Home</a></li>
+                    <li class = "displayli">  <a href = "/josephonghena.html">Introduction</a></li>
+                    <li class = "displayli"> <a href = "/contract.html">Contract</a></li>
+                    <li class = "displayli"><a href = "/itis3135/">Itis 3135 Home</a></li>
+                    <li class = "displayli"><a href = "https://webpages.charlotte.edu/jonghena/">UNCC Home Page</a></li>
+                    <li class = "displayli "><a href = "/tables.html">Tables</a></li>
+                    <li class = "displayli currentli"><a href = "/forms.html">Forms</a></li>
+
+                    <li class = "displayli"><a href = "https://github.com/Joe-Ee/Joe-Ee.github.io">Github Repo</a></li>
+                <li class = "displayli"><a href = "https://joe-ee.github.io/">Github.io </a></li>
+                <li class = "displayli"><a href = "https://www.freecodecamp.org/JosephOnghena">Free Code Camp</a></li>
+                <li class = "displayli"><a href = "https://www.codecademy.com/profiles/JosephOnghena">Codeacademy</a></li>
+                <li class = "displayli"><a href = "https://www.linkedin.com/in/joseph-onghena-bbb153181/">Linkedin</a></li>
+                </ul>
+            </nav>
+            <p>Designed by Jovial Ocelot©</p>
+            <a href="https://validator.w3.org/check?uri=referer" id = "validation_link_html" style = "text-decoration: none;">
+            <img src="images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML." />
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation_link_css" style = "text-decoration: none;">
+            <img src="images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS." />
+            </a>      
+        </footer>        
+      
+    </body>
+</html>
