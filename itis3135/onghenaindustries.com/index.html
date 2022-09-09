@@ -6,7 +6,8 @@
             body {
                 background-color: #ffe3e7;
                 color: #15033b;
-                
+                font-family: 'Source Sans Pro', sans-serif;
+
                 
             }
             .topnav         {
@@ -43,26 +44,41 @@
                 text-decoration: none;
                 font-size: 125%;
             }
-            .currentli  {
+            .currentli  
+            {
 
                 color: #E41B3C;
                 background-color:#F39BAA;
                 padding: 23px;
 
             }
-.titleimg   {
+            .titleimg   
+            {
 
                 float: left;
             }
-.titletxt   {
+            .titletxt   
+            {
                 text-align: left;
-            }            
+            }         
+            .footerimg  
+            {
+
+                text-align: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            main 
+            {
+                margin-left: 25%;
+                margin-right: 25%;
+            }
         </style>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
         <script src="validate.js"></script> 
     </head>
     <body>
@@ -78,7 +94,7 @@
             <li class = "displayli"><a href = "https://joe-ee.github.io/">Github.io </a></li>
           </ul>
     </nav>
-    <h1>Onghena Industires©</h1>
+    <h1 style = "margin-left: 25%; margin-right: 25%;">Onghena Industires©</h1>
     </header>
       <main>
         <p>This is the home page for Onghena Industires©</p>
@@ -87,10 +103,12 @@
         <p>Since we just started this assignment we are currently not doing much. Check back later for updates</p>
         <h3>Hopefully More to Come</h3>
         <p>Soon...</p>
+        <!--Fill up the page to put footer towards the bottom-->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
       </main>
-      <footer>
-        <nav class = "topnav">
+      <footer class = " topnav">
+        <nav >
           <ul class = "toplist">
 
 
@@ -100,11 +118,11 @@
 
           </ul>
       </nav>
-      <a href="https://validator.w3.org/check?uri=referer" id = "validation_link_html" style = "text-decoration: none;">
-        <img src="images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML." />
+      <a href="https://validator.w3.org/check?uri=referer" id = "validation_link_html" style = "text-decoration: none;" >
+        <img src="images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML." class ="footerimg"/>
     </a>
     <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation_link_css" style = "text-decoration: none;">
-    <img src="images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS." />
+    <img src="images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS." class ="footerimg"/>
     </a>    
       </footer>        
       
