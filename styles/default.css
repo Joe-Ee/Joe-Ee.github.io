@@ -78,3 +78,23 @@ table tr:nth-child(odd) {
 .left       {
                 text-align: left;
             }
+
+input       {
+                background-color: floralwhite;
+                display: block;
+                color: black;
+                border: 2px solid;
+                font-size: 16px;
+
+            }
+.sub        {
+                background-color: #342819;
+                color: #E2D1BD;
+                display: inline;
+                font-size: 125%;
+            }
+form        {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+            }

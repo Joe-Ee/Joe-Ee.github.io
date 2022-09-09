@@ -27,32 +27,34 @@
             </nav>
         </header>
         <main>
-            <form action="#" autocomplete="off">
+            <h2>Welcome to Jovial Ocelot!</h2>
+            <h3 style = "text-align: center;">Please provide information so we can contact you in the future</h3>
+            <form action="#" autocomplete="off" class = "center">
                 <label for = "name">Name:</label>
                 <input type = "text" id="name" name="name" required autocomplete="off" placeholder = "name">
                 <label for = "phone">Phone:</label>
                 <input type = "tel" id = "phone" name = "phone" autocomplete="off" placeholder = "000-000-0000">
-                <label for = "email">Email:</label>
-                <input type = "email" id = "email" name = "email" required autocomplete="off" placeholder = "email">
+                <label for = "email" >Email:</label>
+                <input type = "email" id = "email" name = "email" required autocomplete="off" placeholder = "email"><br>
 
-                <label>How should we contact you?</label>
-                <input type="checkbox" id="contact1" name="contact1" value="email">
+                <label>How should we contact you?</label><br>
+                <input type="checkbox" id="contact1" name="contact1" value="email" style = "display: inline-block;">
                 <label for="contact1">Email</label><br>
-                <input type="checkbox" id="contact2" name="contact2" value="call">
+                <input type="checkbox" id="contact2" name="contact2" value="call" style = "display: inline-block;">
                 <label for="contact2">Phone Call</label><br>
-                <input type="checkbox" id="contact3" name="contact3" value="text">
-                <label for="contact3">Text Message</label><br>
+                <input type="checkbox" id="contact3" name="contact3" value="text" style = "display: inline-block;">
+                <label for="contact3">Text Message</label><br><br>
 
-                <label>What is your shirt size?</label>
-                <input type="radio" id="small" name="size" value="small" checked = "checked">
-                <label for="small">Small</label>
-                <input type="radio" id="medium" name="size" value="medium">
-                <label for="medium">Medium</label>
-                <input type="radio" id="large" name="size" value="large">
-                <label for="large">Large</label> 
+                <label>What is your shirt size?</label><br>
+                <input type="radio" id="small" name="size" value="small" checked = "checked" style = "display: inline-block;">
+                <label for="small">Small</label><br>
+                <input type="radio" id="medium" name="size" value="medium" style = "display: inline-block;">
+                <label for="medium">Medium</label><br>
+                <input type="radio" id="large" name="size" value="large" style = "display: inline-block;">
+                <label for="large">Large</label> <br><br>
 
-                <input type = "reset">
-                <input type = "submit">
+                <input type = "reset" class = "sub">
+                <input type = "submit"  class = "sub" value = "Submit"  >
 
             </form>
         </main>
