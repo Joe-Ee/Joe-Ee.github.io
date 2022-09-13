@@ -1,7 +1,8 @@
 body
             {
-                background-color: #F6ECCE;
-                color: #4B472C;
+                background-color: #2e2d25;
+                
+                color: #F6ECCE;
                 margin-left: 20%;
                 margin-right: 20%;
                 font-family: 'Roboto', sans-serif;
@@ -13,10 +14,11 @@ body
                 display: block;
                 
             }
-.topnav         {
-                background-color: #F6ECCE; 
+nav         {
+                background-color: #2e2d25; 
+                
                 padding: 5px;
-                color: #4B472C;
+                color: #F6ECCE;
                 text-align: center;
 
             }
@@ -35,75 +37,17 @@ nav li + li:before{
                   }
 
 a:hover     {
-                color: #4B472C;
+                color: #fdffee;
+                
             }
 a           {
-                color: gray;
+                color: #F6ECCE;
             }
-.currentli  {
 
-                background-color: #F6ECEC;
-            }
-figure      {
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-                display: block;
-                font-style: italic;
-            }   
 h1, h2, h3  {
                 font-family: 'Kanit', sans-serif;
+                text-align: center;
             }
 header, footer{
     text-align: center;
-              }   
-h2          {
-            text-align: center;
-            }
-table td, th{
-    border: 1px solid;
-            }
-#toprow     {
-                background-color:#342819;
-                color: #E2D1BD;
-            }
-table tr:nth-child(even) {
-                background-color: #E2D1BD;
-                color: #342819;
-                        }
-table tr:nth-child(odd) {
-                            background-color: #8A6942;
-                            color: #E2D1BD;
-                                    }
-.left       {
-                text-align: left;
-            }
-
-input       {
-                background-color: floralwhite;
-                display: block;
-                color: black;
-                border: 2px solid;
-                font-size: 16px;
-
-            }
-.sub        {
-                background-color: #342819;
-                color: #E2D1BD;
-                display: inline;
-                font-size: 125%;
-            }
-form        {
-    width: 35%;
-    margin-left: auto;
-    margin-right: auto;
-            }
-
-select{
-    background-color: floralwhite;
-    display: block;
-    color: black;
-    border: 2px solid;
-    font-size: 16px;
-    width: 50%;
-}
+            }   
