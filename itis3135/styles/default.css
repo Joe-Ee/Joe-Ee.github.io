@@ -6,30 +6,21 @@ body
                 margin-right: 20%;
                 font-family: 'Roboto', sans-serif;
             }
-.center
-            {
-                margin-left: auto;
-                margin-right: auto;
-                display: block;
-                
-            }
-.topnav         {
+
+nav       {
                 background-color: #F6ECCE; 
                 padding: 5px;
                 color: #4B472C;
                 text-align: center;
 
             }
-.toplist    {
+nav ul   {
                 list-style-type: none;
                 display: inline;
                 font-size: 110%;
                 display: block;
             }
-.displayli  {   
-                display: inline-block;
-                text-decoration: none;
-            }
+
 nav li + li:before{
                 content: " ≡ ";
                   }
@@ -40,10 +31,7 @@ a:hover     {
 a           {
                 color: gray;
             }
-.currentli  {
 
-                background-color: #F6ECEC;
-            }
 figure      {
                 text-align: center;
                 margin-left: auto;
@@ -58,6 +46,9 @@ header, footer{
     text-align: center;
               }   
 h2          {
+            text-align: center;
+            }
+h3          {
             text-align: center;
             }
 table td, th{
@@ -75,9 +66,6 @@ table tr:nth-child(odd) {
                             background-color: #8A6942;
                             color: #E2D1BD;
                                     }
-.left       {
-                text-align: left;
-            }
 
 input       {
                 background-color: floralwhite;
@@ -87,7 +75,13 @@ input       {
                 font-size: 16px;
 
             }
-.sub        {
+input[type = "reset"]       {
+                background-color: #342819;
+                color: #E2D1BD;
+                display: inline;
+                font-size: 125%;
+            }
+input[type = "submit"]       {
                 background-color: #342819;
                 color: #E2D1BD;
                 display: inline;
@@ -106,4 +100,15 @@ select{
     border: 2px solid;
     font-size: 16px;
     width: 50%;
+}
+
+nav ul li{
+    display: inline-block;
+    text-decoration: none;
+}
+input[type="radio"]{
+    display: inline-block;
+}
+input[type ="checkbox"]{
+    display: inline-block;
 }

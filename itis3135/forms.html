@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="styles/default.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script src="validate.js"></script> 
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet"> 
@@ -11,27 +11,12 @@
         <title>The Jovial Ocelot | Joseph Onghena | ITIS 3135| Forms</title>
     </head>
     <body>
-        <header>   
-            
-            <h1>Joseph "Joe" Onghena: ITIS3135</h1>
-       
-            <nav class = "topnav">
-                <ul class = "toplist">
-                    <li class = "displayli "><a href = ".." >Home</a></li>
-                    <li class = "displayli">  <a href = "josephonghena.html">Introduction</a></li>
-                    <li class = "displayli"> <a href = "contract.html">Contract</a></li>
-                    <li class = "displayli"><a href = "index.html">Itis 3135 Home</a></li>
-                    <li class = "displayli "><a href = "tables.html">Tables</a></li>
-                    <li class = "displayli currentli"><a href = "forms.html">Forms</a></li>
-                    <li class = "displayli"><a href = "stuff/CraPyWeb+ Page.htm">CrappyWeb Page</a></li>
-                    <li class ="displayli "><a href = "website_evaluations.html">Website Evaluation</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div data-include="components/header.html"></div>
+
         <main>
             <h2>Welcome to Jovial Ocelot!</h2>
-            <h3 style = "text-align: center;">Please provide information so we can contact you in the future</h3>
-            <form action="#" autocomplete="off" class = "center">
+            <h3 >Please provide information so we can contact you in the future</h3>
+            <form action="#" autocomplete="off" >
                 <label for = "name">Name:</label>
                 <input type = "text" id="name" name="name" required autocomplete="off" placeholder = "name">
                 <label for = "phone">Phone:</label>
@@ -40,19 +25,19 @@
                 <input type = "email" id = "email" name = "email" required autocomplete="off" placeholder = "email"><br>
 
                 <label>How should we contact you?</label><br>
-                <input type="checkbox" id="contact1" name="contact1" value="email" style = "display: inline-block;">
+                <input type="checkbox" id="contact1" name="contact1" value="email" >
                 <label for="contact1">Email</label><br>
-                <input type="checkbox" id="contact2" name="contact2" value="call" style = "display: inline-block;">
+                <input type="checkbox" id="contact2" name="contact2" value="call">
                 <label for="contact2">Phone Call</label><br>
-                <input type="checkbox" id="contact3" name="contact3" value="text" style = "display: inline-block;">
+                <input type="checkbox" id="contact3" name="contact3" value="text" >
                 <label for="contact3">Text Message</label><br><br>
 
                 <label>What is your shirt size?</label><br>
-                <input type="radio" id="small" name="size" value="small" checked = "checked" style = "display: inline-block;">
+                <input type="radio" id="small" name="size" value="small" checked = "checked" >
                 <label for="small">Small</label><br>
-                <input type="radio" id="medium" name="size" value="medium" style = "display: inline-block;">
+                <input type="radio" id="medium" name="size" value="medium" >
                 <label for="medium">Medium</label><br>
-                <input type="radio" id="large" name="size" value="large" style = "display: inline-block;">
+                <input type="radio" id="large" name="size" value="large" >
                 <label for="large">Large</label> <br><br>
 
                  <label for="grad">What year are you graduating?</label><br>
@@ -64,39 +49,13 @@
                         <option value="2023">2023</option>
                     </select> <br>
 
-                <input type = "reset" class = "sub">
-                <input type = "submit"  class = "sub" value = "Submit"  >
+                <input type = "reset" >
+                <input type = "submit"   value = "Submit"  >
 
             </form>
         </main>
-        <footer>
-            <nav class = "topnav">
-                <ul class = "toplist">
-                    <li class = "displayli "><a href = ".." >Home</a></li>
-                    <li class = "displayli">  <a href = "josephonghena.html">Introduction</a></li>
-                    <li class = "displayli"> <a href = "contract.html">Contract</a></li>
-                    <li class = "displayli"><a href = "index.html">Itis 3135 Home</a></li>
-                    <li class = "displayli"><a href = "https://webpages.charlotte.edu/jonghena/">UNCC Home Page</a></li>
-                    <li class = "displayli "><a href = "tables.html">Tables</a></li>
-                    <li class = "displayli currentli"><a href = "forms.html">Forms</a></li>
-                    <li class = "displayli"><a href = "stuff/CraPyWeb+ Page.htm">CrappyWeb Page</a></li>
-                    <li class ="displayli "><a href = "website_evaluations.html">Website Evaluation</a></li>
-
-                    <li class = "displayli"><a href = "https://github.com/Joe-Ee/Joe-Ee.github.io">Github Repo</a></li>
-                <li class = "displayli"><a href = "https://joe-ee.github.io/">Github.io </a></li>
-                <li class = "displayli"><a href = "https://www.freecodecamp.org/JosephOnghena">Free Code Camp</a></li>
-                <li class = "displayli"><a href = "https://www.codecademy.com/profiles/JosephOnghena">Codeacademy</a></li>
-                <li class = "displayli"><a href = "https://www.linkedin.com/in/joseph-onghena-bbb153181/">Linkedin</a></li>
-                </ul>
-            </nav>
-            <p>Designed by <a href = "onghenaindustries.com/">Onghena Industries©</a></p>
-            <a href="https://validator.w3.org/check?uri=referer" id = "validation_link_html" style = "text-decoration: none;">
-            <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML." />
-            </a>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation_link_css" style = "text-decoration: none;">
-            <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS." />
-            </a>      
-        </footer>        
-      
+        <div data-include="components/footer.html"></div>       
+    
+        <script src="scripts/HTMLInclude.min.js"></script>
     </body>
 </html>
