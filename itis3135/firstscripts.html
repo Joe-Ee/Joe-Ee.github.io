@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>The Jovial Ocelot | Joseph Onghena | ITIS 3135| Home</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+      <div data-include="components/header.html"></div>
+
+      <main>
+        <h2>firstscripts</h2>
+        
+        <h3>Current Date, Day of the Week, and Time: The time is <span id ="time"></span>:<span id ="mins"></span> on <span id="date"></span>, <span id ="day"></span>, <span id = "month"></span>, <span id ="year"></span></h3>
+      <form id ="moodform">
+        <label for = "name">Name:</label>
+                <input type = "text" id="name" name="name" required autocomplete="off" placeholder = "name" value ="">
+                <label for = "moodUser">Mood:</label>
+                <input type = "text" id = "moodUser" name = "moodUser" autocomplete="off" placeholder = "happy" value ="">
+                <input type ="button" value ="Submit" onclick ="nameMood()">
+                
+      </form>
+                <h3 id ="userName"></h3>
+                <h3 id ="myMood"></h3>
+                <h2>5 JS Scripts</h2> 
+                <br><h3>Calculate the sales tax for the Jovial Ocelot</h3>
+                <form>
+                  <label for ="cost">Type in the cost</label>
+                  <input type="number" id ="cost" name ="cost">
+                  <input type ="button" value ="Submit" onclick ="salestax()">
+                </form>
+                <h4 id ="totalTax"></h4>
+                <br><h3>Help the Jovial Ocelot calculate MPG</h3>
+                <form>
+                  <label for = "miles">Type in miles driven</label>
+                  <input type="number" id ="miles" name ="miles"> 
+                  <label for = "gallons" >Type in gallons used</label>
+                  <input type ="number" id ="gallons" name ="gallons">
+                  <input type ="button" value ="Submit" onclick ="mpg()">
+                </form>
+                <h4 id ="answerMiles"></h4>
+                <br>
+                <h3>Find the combinations of 2 samples out of 5 objects</h3>
+                <div>
+                  <input type="button" value ="submit" id ="choose" onclick ="combinations()">
+                  <h4 id ="chosen"></h4>
+                </div>
+                <br>
+                <h3>Find the area of the Ocelot enclosure</h3>
+                <div>
+                  <input type="button" value ="submit" id ="calculateArea" onclick ="area()">
+                  <h4 id ="area"></h4>
+                </div>
+                <br>
+                <h3>Calculate the average test score</h3>
+                <div>
+                  <input type="button" value ="submit" id ="calculateAverage" onclick ="averageScore()">
+                  <h4 id ="averageScores"></h4>
+                </div>
+      </main>
+      <div data-include="components/footer.html"></div>       
+   
+      <script src="scripts/HTMLInclude.min.js"></script>
+      <script src="scripts/defaultscripts.js"></script>
+
+    </body>
+    
+</html>
