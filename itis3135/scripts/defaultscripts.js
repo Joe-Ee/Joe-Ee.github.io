@@ -105,7 +105,7 @@ function getShape(){
         
     alert(ogons[sides]);
     if(sides >0){
-    shapepicture.src = "/images/" + ogons[sides].toLowerCase() +".PNG"; 
+    shapepicture.src = "images/" + ogons[sides].toLowerCase() +".PNG"; 
                 }
     else{
         shapepicture.src = "";
