@@ -108,7 +108,7 @@ function getShape(){
     shapepicture.src = "images/" + ogons[sides].toLowerCase() +".PNG"; 
                 }
     else{
-        shapepicture.src = "";
+        shapepicture.src = "blank.png";
         }
                 }
 
