@@ -1,8 +1,8 @@
 //6 js scripts for the JS page -------------------------------------------------------
 function nameMood(){
     //save name and mood in varluables
-    var name = document.getElementById('name').value;
-    var mood = document.getElementById('moodUser').value;
+    let name = document.getElementById('name').value;
+    let mood = document.getElementById('moodUser').value;
     //set the text in the h3 to the text given and the outer text too
     document.getElementById("userName").innerHTML = "The Jovial Ocelot Welcomes You " + name + "!";
 
@@ -12,8 +12,8 @@ function nameMood(){
 function salestax(){
         //get input
 
-    var cost = document.getElementById('cost').value;
-    var total = parseInt(cost) + .475 * parseInt(cost); //pareseint lets you go from string to integer for calcualtions
+    let cost = document.getElementById('cost').value;
+    let total = parseInt(cost) + .475 * parseInt(cost); //pareseint lets you go from string to integer for calcualtions
     //set the text in the h3 to the text given and the outer text too
 
     document.getElementById("totalTax").innerHTML = "The total after tax is $" + total;   
@@ -22,8 +22,8 @@ function salestax(){
                     //From Murach Text
 function mpg(){
     //get input
-    var miles = document.getElementById('miles').value;
-    var gallons = document.getElementById('gallons').value;
+    let miles = document.getElementById('miles').value;
+    let gallons = document.getElementById('gallons').value;
     //set the text in the h3 to the text given and the outer text too
     document.getElementById("answerMiles").innerHTML = "The miles per gallon is " + parseInt(miles)/parseInt(gallons) + "!";
          
@@ -32,7 +32,7 @@ function mpg(){
 //is basically just a while loop that goes down until the number is 1 and multipllies it by itself
 // ex 5 * 4 * 3 * 2 * 1
 function factor(numbers){
-        var ans = numbers;
+        let ans = numbers;
         while (numbers > 1){
             numbers= numbers - 1;
             ans = ans * numbers;
@@ -71,7 +71,8 @@ function averageScore(){
 
 }
 //----------------------------------------------------------------------------------------------------------------
-    //make a new date object                    
+    //make a new date object         
+       
     const d = new Date();
     document.getElementById("time").innerHTML = d.toLocaleTimeString('en-US');
     //this line is getting the date name weekday name by going into teh array of weekdays and then looking for the corresponding date name
@@ -81,3 +82,39 @@ function averageScore(){
     document.getElementById("month").innerHTML = d.toLocaleDateString('default', {month: 'long'});
     document.getElementById("year").innerHTML = d.getFullYear();
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+function getShape(){
+    //loop validator
+    let good = 1;
+    let sides = -1;
+    let shapepicture = document.getElementById("shapeimage");
+    //list of names of ogons so I can just reference this when picking the shpae
+    const ogons = ["Nonagon", "Circle", "Digon", "Trigon", "Quadrilateral", "Pentagon", "Hexagon", "Heptagon", "Octogon", "Enneagon", "Decagon"]
+     
+
+        //get shape that they typed in.
+    sides = Math.abs(document.getElementById('sides').value);
+    sides = Math.round(sides)
+    //validate that they typed in a number bewteen 0 and 10 
+    if (!validateEntry(sides)){
+        good = 0;
+        let prompt = document.getElementById("prompt").innerHTML = "Invalid amount of sides, try again.";
+        return; 
+    }
+
+        
+    alert(ogons[sides]);
+    if(sides >0){
+    shapepicture.src = "images/" + ogons[sides].toLowerCase() +".png";
+                }
+    else{
+        shapepicture.src = "";
+        }
+                }
+
+function validateEntry(sides){
+        if(isNaN(sides) || sides <11){
+            return true;
+        }
+        return false;
+                            }   
