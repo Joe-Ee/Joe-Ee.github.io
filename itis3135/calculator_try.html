@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>The Jovial Ocelot | Joseph Onghena | ITIS 3135| Calculator Try</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+        <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+
+    </head>
+    <body>
+      <div data-include="components/header.html"></div>
+      <main>
+        <h2>Calculator TRY</h2>
+
+        <label id="screen">0</label>
+        <div class="calculator__keys">
+            <button data-action="*">*</button>
+            <button >.</button>
+            <button >0</button>   
+            <button >1</button>
+            <button data-action="/">/</button>
+       
+            
+            <button >2</button>
+            <button >3</button>
+            
+        
+            <button >4</button>
+            <button data-action="+">+</button>
+            <button>5</button>
+            
+           
+            <button >6</button>
+
+            <button >7</button>
+            <button data-action="-">-</button>
+        
+            <button >8</button>
+            <button >9</button>
+            
+            <button data-action="AC">AC</button>
+            <!--didn't really understand step 6 based on how you desribed it, this is the closet I got to it-->
+            <button data-action="dec">Decrement</button>
+            <button data-action="inc">Increment</button>
+
+            <button type = "submit" data-action="=">=</button>
+
+            
+        </div>
+
+      </main>
+      <div data-include="components/footer.html"></div>       
+   
+      <script src="scripts/HTMLInclude.min.js"></script>
+      <script src="scripts/calculator_try.js"></script>
+    </body>
+</html>
