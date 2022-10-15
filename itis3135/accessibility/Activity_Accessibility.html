@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Description" content="Testing website for accessibility.">
+
+  <!-- css -->
+  <link rel="stylesheet" href="Activity_Accessibility.css">
+  <title>Test For Accessibility</title>
+
+</head>
+
+<body>
+  <header>
+    <h1>Candle Delight</h1>
+  </header>
+  <main>
+
+    <table class="center">
+
+      <caption></caption>
+      <thead>
+        <tr>
+          <!-- identify table headers <th> with scope attribute -->
+          <th >TYPE</th>
+          <th >PRODUCT</th>
+          <th >FEATURES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Birthday Candles</th>
+          <td><img src = "images/Birthday-Candles.jpg" height = 70 width = 100 ></td>
+          <td><ol>
+            <li>Comes in a range of fun, vibrant colors</li>
+            <li>Small and slender forms allow you to add as many or as few of them as desert as you desire</li>
+            <li>Offers a way to personalize customers' deserts on birthdays and anniversaries</li>
+          </ol>
+          </td>   
+        </td>
+        </tr>
+        <tr>
+            <th>Votives</th>
+            <td><img src = "images/voltives.jpeg" height = 70 width = 100 alt = "5 candles lit on a shady background"></td>
+            <td><ol>
+              <li>Inexpensive and easy to use</li>
+              <li>Bigger than tea lights to provide longer burn times, making them better for longer events</li>
+            </ol></td>
+          </tr>
+          <tr>
+              <th>Taper Candles</th>
+              <td><img src = "images/taper-candles.jpg" alt = "Various colored candles on a white background" height = 70 width = 100 alt = "Birhday Candles that say Happy birthday"></td>
+              <td><ol>
+                <li>Commonly known as window candles</li>
+                <li>Long, slender consturctionss add dimension to table tops</li>
+              </ol></td>
+            </tr>
+      </tbody>
+      <caption>Candles</caption>
+    </table>
+     <!--Add the form here-->
+    <form >
+      <label for="name">Name:</label>
+      <input id="name" type="text" autocomplete="name" aria-required="true">
+      
+      <label for="phone">Phone Number:</label>
+      <input id="phone" type="tel" autocomplete="phone" aria-required="true"> 
+      <input type="submit" action ="#">
+    
+    </form>
+   
+    <div class="whitespace"></div>
+    <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
+    <div class="whitespace"></div>
+
+    <a href="https://dequeuniversity.com/rules/axe/3.2/color-contrast"> Find out if your font
+      color and background color passes WCAG standard!</a>
+  </main>
+
+  <footer>
+    <a href="https://validator.w3.org/check?uri=referer" id = "validation_link_html" style = "text-decoration: none;">
+      <img src="/itis3135/images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML."/>
+  </a>
+  
+  <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation_link_css" style = "text-decoration: none;">
+      <img src="/itis3135/images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS."/>
+  </a> 
+  <script src="/itis3135/scripts/validate.js"></script> 
+  </footer>
+</body>
+</html>
