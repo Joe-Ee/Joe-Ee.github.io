@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+
+        <link rel="stylesheet" href="styles/default.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+        <title>The Jovial Ocelot | Joseph Onghena | ITIS 3135| Arrays</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+
+    </head>
+    <body>
+        <div data-include="components/header.html"></div>
+        <label for ="name">Name</label>
+        <input id ="name" name = "name" type="text">
+        <label for ="salary">Salary</label>
+        <input id ="salary" name = "salary" type="text">
+        <main>
+            <label for ="employees">Choose an employee:</label>
+            <select name="employees" id="employees">
+                <option>Robert Iger</option>
+                <option>Charles Hutchinson</option>
+                <option>Brad Hayes</option>
+                <option>Walter Teague</option>
+                <option>Jeffery An</option>
+                <option>Mary Powers</option>
+                <option>Bobby Yeager</option>
+                <option>Medina Gomez</option>
+                <option>Joseph Onghena</option>
+              </select>
+            <button onclick = "addSalary()">Add Salary</button>
+            <button onclick = "displayResults()">Display results</button>
+            <button onclick = "displaySalary()" id ="sal">Display Salary</button>
+              <div id="results">
+                <h2>Results</h2>
+              </div>
+        </main>
+        <div data-include="components/footer.html"></div>       
+   
+        <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="scripts/arrays.js"></script>
+    </body>
+</html>
