@@ -81,6 +81,7 @@ function averageScore(){
     //get the long month from teh array
     document.getElementById("month").innerHTML = d.toLocaleDateString('default', {month: 'long'});
     document.getElementById("year").innerHTML = d.getFullYear();
+    document.getElementById("year").innerHTML = getTodaysDate()
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
 function getShape(){
