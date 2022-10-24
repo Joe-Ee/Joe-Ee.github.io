@@ -72,17 +72,18 @@ function averageScore(){
 }
 //----------------------------------------------------------------------------------------------------------------
     //make a new date object         
-       
-    const d = new Date();
-    document.getElementById("time").innerHTML = d.toLocaleTimeString('en-US');
-    //this line is getting the date name weekday name by going into teh array of weekdays and then looking for the corresponding date name
-    document.getElementById("date").innerHTML = d.toLocaleDateString('en-US', { weekday: 'long'});
-    document.getElementById("day").innerHTML = d.getDay();
-    //get the long month from teh array
-    document.getElementById("month").innerHTML = d.toLocaleDateString('default', {month: 'long'});
-    document.getElementById("year").innerHTML = d.getFullYear();
-    document.getElementById("year").innerHTML = getTodaysDate()
-
+    function getTodaysDate(){
+        const d = new Date();
+        document.getElementById("time").innerHTML = d.toLocaleTimeString('en-US');
+        //this line is getting the date name weekday name by going into teh array of weekdays and then looking for the corresponding date name
+        document.getElementById("date").innerHTML = d.toLocaleDateString('en-US', { weekday: 'long'});
+        document.getElementById("day").innerHTML = d.getDay();
+        //get the long month from teh array
+        document.getElementById("month").innerHTML = d.toLocaleDateString('default', {month: 'long'});
+        document.getElementById("year").innerHTML = d.getFullYear();
+        document.getElementById("year").innerHTML = getTodaysDate();
+        
+    }
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
 function getShape(){
     //loop validator
