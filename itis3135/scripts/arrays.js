@@ -3,7 +3,7 @@ let salaries = [154000, 153000, 156000, 156000, 154000, 130000, 130000, 137000, 
 
 
 function addSalary(){
-
+    document.getElementById("resultText").innerHTML = "salary added"
     let name = document.getElementById("name");
     let salary = document.getElementById("salary").value;
     //input validation
@@ -25,6 +25,8 @@ function addSalary(){
 
 function displayResults(){
     //set base variables 
+    document.getElementById("resultText").innerHTML = "Results for average and highest salary"
+
     let sum = 0;
     let i = 0;
     let highest = 0;
@@ -47,7 +49,8 @@ function displayResults(){
 }
 function displaySalary(){
     
-    
+    document.getElementById("resultText").innerHTML = "Salary Table"
+
     //let table = "<tr><th>Name</th><th>Salary</th></tr>";
     let newTr = document.createElement("tr")
     let th = document.createElement("th")
