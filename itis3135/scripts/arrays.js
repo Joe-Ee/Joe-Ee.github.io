@@ -65,8 +65,8 @@ function displaySalary(){
     //results div
     let page = document.getElementById("results");
     //real table
-    let bruh = document.createElement("table");
-    bruh.appendChild(newTr)
+    let tabl = document.createElement("table");
+    tabl.appendChild(newTr)
     for (let i = 0; i < salaries.length; i++) 
     {  
         //set rows and columns
@@ -81,12 +81,12 @@ function displaySalary(){
         second.appendChild(append2)
         tr.appendChild(first)
         tr.appendChild(second)
-        bruh.appendChild(tr)
+        tabl.appendChild(tr)
 
     }
     let elem = document.createElement("table")
     
-    page.appendChild(bruh)
+    page.appendChild(tabl)
 
      let table = document.createTextNode("table")
 }
