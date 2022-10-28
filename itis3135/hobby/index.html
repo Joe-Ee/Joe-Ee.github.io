@@ -1,0 +1,293 @@
+<!--https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp-->
+<!-- Used: https://www.youtube.com/watch?v=KcdBOoK3Pfw for image carosuel on main page. -->
+<!DOCTYPE html>
+<html lang = "en">
+    
+    <head>
+
+        <title>The Jovial Ocelot | Joseph Onghena | ITIS 3135| Midterm</title>
+ 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <style>
+            body{
+                margin-left: 200px;
+                margin-right: 200px;
+                background-color:#88a98b;
+                color: rgb(40, 13, 3);
+                font-family: 'Roboto', sans-serif;
+
+                
+            }
+
+            .carousel{
+                width: 800px;
+                height: 600px;
+                border: 5px solid  #F3DE8A;
+                overflow: hidden;
+                margin: auto;
+                
+            }
+            .slide{
+                display: flex;
+                width: 800px;
+                height: 600px;
+                
+            }
+            figure{
+                text-align: center;
+                
+            }
+            button{
+                margin-top: 5px;
+                text-align: center;
+                border-radius: 12px;
+                border: 3px solid #F3DE8A; 
+                background-color: rgb(184, 229, 184);
+                color:rgb(40, 13, 3);
+                width: 200px;
+                height: 20px;
+            }
+            table td, th{
+                border: 2px solid #F3DE8A;;
+                background-color: rgb(184, 229, 184);
+                padding-left: 5px;
+                padding-right: 5px;
+                
+                        }
+            header nav button{
+               
+                margin-top: 0px;
+                text-align: center;
+                border-radius: 0px;
+
+                padding: 0;
+                background-color: #F3DE8A;
+                color:rgb(9, 144, 126);
+                
+                margin-right: none;
+                margin-left: 0;
+                display: inline;
+            }
+            nav{
+                background-color: #F3DE8A;
+                align-items: right;
+            }
+            header nav button:hover{
+                border: 3px solid #F3DE8A; 
+                background-color:  rgb(184, 229, 184);
+                color:#120f07;
+            }
+            header{
+                text-align: center;
+            }
+            img{
+                
+            }
+            
+
+        </style>
+    </head>
+    <body>
+    <header> 
+    <h1>Joe's Bikes</h1>
+    <nav>
+        <button onclick = "hide('home')">Home</button>
+        <button onclick = "hide('who')">About Me</button>
+        <button onclick = "hide('seasons')">Biking Seasons</button>
+        <button onclick = "hide('why')">Why I Like Biking</button>
+        <button onclick = "hide('where')">Where to go Biking</button>
+    </nav>
+    </header>
+    <main id ="home" style = "display: block">
+       <h2>My Bikes</h2>
+       <figure>
+       <div class ="carousel">
+            <div class ="slide">
+                <img src ="images/stumpy03.jpg" alt = "2008 green stumpjumper at Lake Minnewaska" width = 800 height = 600 id="last">
+                <img src ="images/bianchi.jpg" alt = "bianchi fixed gear at beach" width = 800 height = 600>
+                <img src ="images/bianchi2.jpg" alt = "bianchi fixed gear" width = 800 height = 600>
+                <img src ="images/bronson.jpg" alt ="santa cruz bronson"  width = 800 height = 600 >
+                <img src ="images/cross1.jpg" alt ="surly cross check with bronson in back"  width = 800 height = 600>
+                <img src ="images/cross2.jpg" alt ="surly cross check with fat bike"  width = 800 height = 600>
+                <img src ="images/klein1.jpg" alt = "klein adroit pro at beach" width = 800 height = 600>
+                <img src ="images/monkey1.jpg" alt = "karate monkey at WWC" width = 800 height = 600>
+                <img src ="images/otherbike1.jpg" alt = "folding bike and gary fisher superfly" width = 800 height = 600>
+                <img src ="images/otherbike2.jpg" alt = "trials bike" width = 800 height = 600>
+                <img src ="images/otherbike3.jpg" alt = "gary fisher rig at beach" width = 800 height = 600>
+                <img src ="images/otherbike4.jpg" alt = "purple stump jumper 2008" width = 800 height = 600>
+                <img src ="images/otherbike6.jpg" alt = "Fat bike at pier" width = 800 height = 600>
+                <img src ="images/stumpy05.jpg" alt = "2008 green stumpjumper near horses" width = 800 >
+                <img src ="images/stumpy03.jpg" alt = "2008 green stumpjumper at Lake Minnewaska" width = 800 height = 600>
+                <img src ="images/bianchi.jpg" alt = "bianchi fixed gear at beach" width = 800 height = 600 id ="first">
+
+            </div>
+       </div>
+       <button id ="previousbutton">Previous</button>
+       <button id ="nextbutton">Next</button>
+       <figcaption>A album of some of the bikes that I have owned.</figcaption>
+        </figure>
+        <p>
+            Over the past 10 years I have owned about 40 various types of bikes from mountain to road bikes. A lot of these bikes I have bought to fix
+            and mess with for a few months before I sell and a few of them have been with me for years. 
+        </p>
+       <h3>Bikes I currently own:</h3>
+       <figure>
+       <table >
+           <tr>
+               <th id = "Year">Year</th>
+               <th id="Name">Name</th>
+               <th id="Model">Model</th>
+
+           </tr>
+           <tr>
+               <td rowspan="year" headers = "catagory">2014</td>
+               <td headers="name">Santa Cruz</td>
+               <td headers="Model">Bronson</td>
+
+           </tr>
+           <tr>
+            <td headers="Year">2010</td>
+               <td headers="Name">Surly</td>
+               <td headers="Model">Cross Check</td>
+               
+  
+           </tr>
+           <tr>
+            <td headers="Year">2010</td>
+               <td headers="Name">Surly</td>
+               <td headers="Model">Cross Check</td>
+              
+
+           </tr>
+           <tr>
+            <td headers="Year">2000</td>
+               <td headers="Name">Klein</td>
+               <td headers="Model">Adroit Pro</td>
+           </tr>
+           <tr>
+            <td headers="Year">1981</td>
+               <td headers="Name">Bianchi</td>
+               
+               <td headers="Model">Vittoria</td>
+
+           </tr>
+
+           
+       </table>
+       
+   </figure>
+
+       <p>
+            Overall I am satisfied with all of my current bikes. They all have a unique purpose and work well. In the future, I am thinking about downsizing my fleet by replacing the Bianchi and Surly Cross check
+            with a steel gravel single speed such as a Crust Evasion Lite or Black Mountain Cycles Monstercross. A bike like that would allow me to keep the 
+            current functionality of the Surly and Bianchi but also save a lot of space. 
+       </p>
+    
+    </main>
+    <main id ="who" style = "display: none">
+        <h2>About Me</h2>
+        <figure>
+            <img src ="images/drop2.jpg" width = 800 height = 426 alt = "Riding off of an 8 foot drop">
+            <figcaption>Riding off of an 8 foot drop</figcaption>
+        </figure>
+       <p>
+        I am Joseph Onghena and I am a Junior at The University of North Carolina at Charlotte. I have been cycling for the past
+        10 years. Throughout those years I have focused on many disciplines of biking such as road, mountain, and gravel and have biked over 11,000 miles. 
+        I am currently the president of the mountain biking club at UNCC. IN this club, I plan group rides and mountain biking events for students in the club to 
+        particpate in. Throughout my time in the club I have met many people from UNCC who enjoy biking like I do and it has helped me make a lot of friends on 
+       </p>
+       <figure>
+        <img src = "images/kanuga.jpg" width = 800 height = 600 alt = "Hitting a jump">
+        <figcaption>Riding a jump at kanuga bike park</figcaption>
+       </figure>
+    </main>
+
+    <main id ="seasons" style = "display: none">
+       <h2>Biking Seasons</h2>
+       <figure>
+        <img src = "images/rockroll2.jpg" width = 800 height = 451 alt = "Riding down rocks">
+        <figcaption>Riding down A dried up water fall</figcaption>
+       </figure>
+        <h3>Mountain Biking Season</h3>
+       <p>The main season for mountain biking is late spring to early fall. This period is characterized by little rain so the trials
+        stay open during most days and do not get damaged. Also, ski lift access mountain bike parks open up. Also, this season is 
+        when the majority of races and events happen for mountain biking. You can still go mountain biking in the winter however, 
+        due to the weather changes it can be hard to find trails that are open. 
+       </p>
+       <figure>
+        <img src = "images/crosscheck4.jpg" width = 600 height = 500 alt = "surly cross check on gravel">
+        <figcaption>Surly Cross Check on gravel during the fall</figcaption>
+       </figure> 
+       <h3>Road and Gravel Biking Season</h3>
+       <p>
+        There is no specific season for gravel and road biking since they are a lot less weather dependent. The best times to go on road rides is in the mornings
+        before there are a lot of cars on the roads. The best times to go on gravel rides are after rain because the gravel will be 
+        packed down well. 
+       </p>
+
+    </main>
+    <main id ="why" style = "display: none">
+       <h2>Why I Like Biking</h2><!--Why I like biking-->
+       <figure>
+        <img src = "images/rockroll.jpg" height = 600 width = 800 alt = "Rock face in upstate new york">
+        <figcaption>Riding down a rock in New York</figcaption>
+        </figure>
+       <p>
+        Biking is one of the most fufilling sports that I have focused on within the past 10 years. I find that it is really rewarding because 
+        it helps me build confidence and I can see my progression well. For example, at the end of bike park days, I end up doing features that I did 
+        not think I would be able to do earlier in the day. Also, mountain biking helps build confidence a lot. I have learned how to judge my abilities
+        and I have become more confident while attempting features that scare me. 
+    </p>
+    <figure>
+        <img src = "images/drop1.jpg" height = 396 width = 792 alt = "Rock face in upstate new york">
+        <figcaption>Riding off of a drop</figcaption>
+        </figure>
+    <p>
+        Another reason that I like biking is that I like working on bikes. It is enjoyable to diagnose and fix problems on bikes and it helps me destress.
+        I also like adding new parts to bikes to change the feel and handling of them. Changing the feel of the bike allows me to be more confident on certain features 
+        and with the bike overall. 
+    </p>
+    </main>
+    <main id ="where" style = "display: none">
+        <h2>Where to Go Biking</h2>
+        <figure>
+            <img src = "images/stumpy06.jpg" width = 800 height = 600 alt = "Bike on side of a mountain">
+            <figure>Black Mountain in Pisgah National Forest</figure>
+        </figure>
+        <h3>Mountain Biking</h3>
+        <p>In North Carolina one of the best locations for mountain biking are near the Ahseville and Brevard area. This area has Pisgah National forest
+            which has over 100 miles of single track trails. This area has long climbs and decents and allows for long and difficult rides. This area also
+            has DuPont State Recreatoinal Forest which has almost 100 miles of trails that are easy to connect for long rides. This area is not as rugged as 
+            Pisgah but it provides a lot of options for different rides and routes. 
+        </p>
+        <h3>Gravel Biking</h3>
+        <p>
+            North Carolina also have a lot of good gravel routes. One exmaple is around Linville Gorge. This is a 50 mile route in Linville Gorge Wilderness area and 
+            is a challenging route with over 7000 feet of elevation. There are also other great areas in North Carolina for gravel biking such as Uwharrie forest and 
+            Old Fort NC.
+        </p>
+        <!-- Code gotten from strava, to embed a map-->
+
+            <div class="strava-embed-placeholder" data-embed-type="route" data-embed-id="3009350008156486598"></div><script src="https://strava-embeds.com/embed.js"></script>
+            <p>Map for the Linville Gravel Loop</p>
+    </main>
+    <footer >
+        <figure>
+        <p>Designed by <a href = "../onghenaindustries.com/">Onghena Industries©</a></p>
+    </figure>
+  <a href="https://validator.w3.org/check?uri=referer" id = "validation_link_html" style = "text-decoration: none;">
+      <img src="images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML."/>
+  </a>
+  
+  <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation_link_css" style = "text-decoration: none;">
+      <img src="images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS."/>
+  </a> 
+    </footer>        
+    <script src="scripts/validate.js"></script> 
+    <script src ="scripts/defaultscripts.js"></script>
+    </body>
+</html>
