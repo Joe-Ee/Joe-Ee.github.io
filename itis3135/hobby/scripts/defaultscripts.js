@@ -49,12 +49,13 @@ slide.addEventListener('transitionend', function transitionEnd(){
 })
 
 function hide(arg){
-    let ar = ["home", "who", "why", "seasons", "where"];
+    let ar = ["home", "who", "why", "seasons", "where", "how"];
     let home = ar[0];
     let who = ar[1];
     let why = ar[2];
     let season = ar[3];
     let where = ar[4];
+    let how = ar[5]
     let page = document.getElementById(arg);
     
     console.log(ar.indexOf(arg)); //the user pressed this
