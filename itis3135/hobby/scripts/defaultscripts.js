@@ -59,7 +59,7 @@ function hide(arg){
     let page = document.getElementById(arg);
     
     console.log(ar.indexOf(arg)); //the user pressed this
-    for(let i = 0; i < 5; i++){
+    for(let i = 0; i < 6; i++){
         let  cur = document.getElementById(ar[i]);
         cur.style.display = 'none';
     }
