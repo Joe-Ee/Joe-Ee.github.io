@@ -162,3 +162,48 @@ div p{
     display: block;
     
 }
+
+.container{
+    width: 850px;
+    height: 700px; 
+    margin: 40px auto;
+    overflow: auto;
+}
+
+.pictures{
+    width: 800px;
+    height: 500px;
+    position: relative;
+    overflow:hidden;
+    float: left;
+    
+    border: rgb(66, 22, 22) solid 10px;
+}
+.pictures img{
+    display: none;
+    width: 800px;
+    height: 600px;
+}
+
+.pictures img.active{
+    display: inline-block;
+}
+
+.prev, .next{
+    float: left;
+    margin-right: 40%;
+    margin-left:35%;
+    cursor: pointer;
+}
+.prev{
+    position: relative;
+    margin-right: 45px;
+    
+    z-index: 100;
+}
+.next{
+    position: relative;
+    margin-left: 45px;
+    z-index: 100;
+    
+}

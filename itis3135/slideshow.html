@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>The Jovial Ocelot | Joseph Onghena | ITIS 3135| Slideshow</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+        <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+
+    </head>
+    <body>
+      <div data-include="components/header.html"></div>
+        
+      <main>
+        <h2>My Slideshow</h2>
+        <div class = "container">
+            <div class="slider-out">
+                
+                
+                <div class = "pictures">
+                    <img src="images/slid1.jpg" class ="active" alt = "first slide" width = 800 height = 500>
+                    <img src="images/slid2.jpg"  alt = "second slide" width = 800 height = 500>
+                    <img src="images/slid3.jpg"  alt = "third slide" width = 800 height = 500>
+                    <img src="images/slid4.jpg"  alt = "fourth slide" width = 800 height = 500>
+                    <img src="images/slid5.jpg" alt = "fifth slide" width = 800 height = 500>
+                    <img src="images/slid6.jpg"  alt = "sized slide" width = 800 height = 500>
+                </div>
+                <img src="images/arrowleft.png" width = 50 height = 50 alt = "arrow pointing left" class = "prev">
+                <img src="images/arrow1.png" width = 50 height = 50 alt = "arrow pointing right" class = "next">
+            </div>
+        </div>
+
+      </main>
+      <div data-include="components/footer.html"></div>       
+   
+      <script src="scripts/HTMLInclude.min.js"></script>
+      <script src="scripts/slideshow.js"></script>
+    </body>
+</html>
