@@ -13,9 +13,12 @@
     </head>
     <body>
       <div data-include="components/header.html"></div>
-      <h1>HTML and Javascript for Beginners</h1>
       <main>
-        <h2>History of HTML</h2>
+      <button onclick = "hide('html')" >History of HTML</button>
+      <button onclick = "hide('js')">History of Javascript</button>
+
+        <article  id ="html" style = "display: block;">
+        <h2  >History of HTML</h2>
         <figure>
           <img src= "images/introcode.png" alt = "some sample html code" width = 609 height = 267>
           <figcaption>HTML code with a table, div, unordered list, and h1 tag</figcaption>
@@ -24,14 +27,42 @@
           HTML was original made in 1993 by Tim Berners-Lee. This language was based on Standard Generalized Mark-up Language which was a way to mark up text into differnet forms.
           A large difference between the 2 languages was the use of the anchor tag and href. These helped make this languge popular. After its creation it went through many different changes and in the early 2000s HTML 
           4 was made the standard.
-          
         </p>
-        <h2>History of Javascript</h2>
-
+        <p>
+          We are currently using HTML 5 which was made in 2011 and is the final major HTML version and the standard for HTML. This became the standard in 2014
+          and approximately 90% of websites are built with HTML5. HTML5 is important because it was more consitent and makes it easy to design webpages.
+          Another aspect with HTML5 is it ccaters to mobile use better which is very important because most internet access now is through modern phones.
+        </p>
+        <br>
+        </article>
+        <article id ="js" style  ="display: none;">
+          <h2>History of Javascript</h2>
+          <figure>
+            <img src= "images/jssample.png" alt = "some sample Javascript Code" width = 696 height = 195>
+            <figcaption>sample javascript code</figcaption>
+          </figure>
+          <p>
+            Javascript was invented in 1995 as a scripting language for the netscape browser. It was originally created to validate input on the browser side.
+            It was created similarly to java but as a more lightweight version so it could handle tasks on the client side. When it was created it was very 
+            popular and updated throughout its lifetime.
+          </p>
+          <p>
+            Javascript is now used to create complex functions on webapges. This code is processed in the browser on the user's computer which makes it very quick 
+            and lightweight. Without javascript all webpages would be static on the internet. 98% of the websites on the internet use javascript in some way. 
+          </p>
+          <br>
+        </article>
         <h2>Why are HTML and Javascript Needed?</h2>
+        <p>
+          HTML and Javascript are needed because they allow us to make webpages that are interactive. Without HTML the structure of the webpages would look very different.
+          Without Javascript every website would be static which means there would be no way to interact with the website.  
+          These 2 langauges help create all modern webpages that we are familiar with and without them the internet would be structured and act very differently..
+
+        </p>
       </main>
       <div data-include="components/footer.html"></div>       
    
       <script src="scripts/HTMLInclude.min.js"></script>
+      <script src="scripts/defaultscripts.js"></script>
     </body>
 </html>
