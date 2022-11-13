@@ -14,8 +14,91 @@
     <body>
         <div data-include="components/header.html"></div>
         <main>
-      
-      
+            <h2>Loops and Conditionals in Javascript</h2>
+            <img>
+            <p>
+                Loops are easy ways to repeat part of a program multiple times in a row. For example if you wanted to print out something x times you can write a loop to do it. 
+                Conditionals are used in ways to make decisions. For example, if a statement is true the program will do one thing but if it is not the program will do something else. 
+                This could be used for error checking and other things. 
+            </p>
+            <h3>Loops</h3>
+            <!--MAKE THIS WORK-->
+                
+                <section >
+                    <div style="float:left; width: 35%">
+                        <h4>For Loops</h4>
+                        <p>This type of loop is a loop that takes in a parameter for incrementing/decrementing, a top or bottom value (how many times you want it to loop), and a incrementor/decrementor</p>
+                        <p>The syntax is pictured to the right</p>
+                    </div>
+                    <div style="float:right; width: 65%;">
+                        <figure>
+                            <img src = "images/realforloop.PNG" width = 267 height = 153 alt = "Example of code that has a for loop">
+                            <figcaption>Example of code that has a for loop</figcaption>
+                        </figure>
+                    </div>
+                </section>
+                
+                <div style="clear:both"></div>
+
+                
+                <section >
+                    <div style="float:left; width: 50%">
+                       
+
+                        <figure>
+                            <img src = "images/whileloop.PNG" width = 313 height = 189 alt = "Example of code that has a while loop">
+                            <figcaption>Example of code with a while loop</figcaption>
+                        </figure>
+                    </div>
+                    <div style="float:right; width: 50%;">
+                        <h4>While Loops</h4>
+                        <p>States that while a condition is happening then loop. This loop takes in a parameter at the beginning and checks it every loop.
+                            If the parameter does not meet the specifications before the loop starts, then the code will skip over the block. (Ex. if i &lt 5 
+                            but i is 6 at the beginning.)
+                        </p>
+                    </div>
+                </section>
+                
+                <div style="clear:both"></div>
+                <section >
+                    <div style="float:left; width: 50%">
+                       
+                        <h4>Do While Loops</h4>
+                        <p>States that while a condition is happening then loop. This loop takes in a parameter and checks it at the end of every loop.
+                            If the parameter does not meet the specifications before the loop starts, it will still run through the code once. 
+                        </p>
+                        
+                    </div>
+                    <div style="float:right; width: 50%;">
+                        
+                        <figure>
+                            <img src = "images/dowhile.PNG" width = 289 height = 215 alt = "Example of code that has a do while loop">
+                            <figcaption>Example of code with a do while loop</figcaption>
+                        </figure>
+                    </div>
+                </section>
+                
+                <div style="clear:both"></div>
+                <h3>If statement</h3>
+                
+                <section >
+                    <div style="float:left; width: 35%">
+                        
+                        <p>This is a statement that checks if a variable meets a condition and then runs a certain piece of code based on the condition</p>
+                    </div>
+                    <div style="float:right; width: 65%;">
+                        <figure>
+                            <img src = "images/ifstatement.PNG" width = 476 height = 211 alt = "Example of an if statment">
+                            <figcaption>Example of code that has an if statement</figcaption>
+                        </figure>
+                    </div>
+                </section>
+                
+                <div style="clear:both"></div>
+                <section></section>
+
+
+            <br>
       </main>
       <div data-include="components/footer.html"></div>       
    
@@ -23,3 +106,16 @@
       <script src="scripts/defaultscripts.js"></script>
     </body>
 </html>
+
+
+<script>
+    //if statment
+   //runs a certain set of code based on parameters passed in
+   //uses comparison operators to check variable(s)
+    let i = 0;
+    if( i < 0){
+        console.log("i is less than 0")
+    }else{
+        console.log("i is greater than or equal to 0")
+    }
+</script>

@@ -38,3 +38,12 @@ a {
     color: rgb(29, 28, 28);
 
 }
+
+span{
+    color: rgb(202, 30, 202);
+}
+
+section{
+    border-top: 3px solid rgb(29, 28, 28);
+    width: 100%;
+}

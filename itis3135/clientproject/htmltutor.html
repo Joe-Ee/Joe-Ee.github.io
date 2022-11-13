@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>The Jovial Ocelot | Joseph Onghena | ITIS 3135| Home</title>
+        <title>The Jovial Ocelot | Joseph Onghena | ITIS 3135| HTML Tutor</title>
         <link rel="stylesheet" href="styles/default.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,29 @@
     <body>
         <div data-include="components/header.html"></div>
         <main>
-      
+            <h2>HTML Tutorial</h2>
+            <figure>
+                <img src = "images/examplesetuphtmlpage.PNG" alt = "example image of how to setup an html page">
+                <figcaption>Example of basic HTML page structure. </figcaption>
+                </figure>
+            <p>HTML documents consist of tags that create the structure of the page. Most of the tags must have a matching &lt/&gt tag to end it. HTML elements usually consist of attribute value pairs inside the tag, and content between the 2 tags. </p>
+            <h3>Basic Document Setup</h3>
+            <p>All HTML documents start with the &lt!DOCTYPE html&gt tag. This declares that you are writing with html. The next tag after that is 
+                the &lthtml&gt tag. This tag has a closing tag that is the last line of the HTML document. A page is set up in the order of head, body, header, main, footer tags with 
+                header, main, and footer contained in the body tag. General basic page layout is pictured above.  
+            </p>
+            
+            <h3>Basic Tags</h3>
+            <ul>
+                <li>&lthead&gt This is where metadata on the website goes such as title, or links to stylesheets. The user does not see this</li>
+                <li>&ltbody&gt This is where all of the viewable information on the page goes. All of the information shown on the page is stored within the body open and closing tag.</li>
+                <li>&lth1&gt This tag is a main heading tag and is supposed to be used once per page. There are 6 types of headings total and they can be used by replacing the 1 in this tag with 2-6. Those are subheadings and are used for structural reasons and are titles or subtitles that you want to display on a page.</li>
+                <li>&ltp&gt This is a paragraph tag and this is the type of tag that you would put a body of text in</li>
+                <li>&lta&gt This tag is an anchor tag and is used for links</li>
+                <li>&ltscript&gt This tag allows a user to embed a javascript script into a page. They can either put code between the 2 tags or link it to a js file. </li>
+                <li>&lttitle&gt This tag allows the user to add a title to the page. This is shown in the top tab bar. </li>
+
+            </ul>
       
       </main>
       <div data-include="components/footer.html"></div>       

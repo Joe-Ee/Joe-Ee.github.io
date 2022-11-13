@@ -1,5 +1,8 @@
 let person = ["Robert Iger", "Charles Hutchinson", "Brad Hayes", "Walter Teague", "Jeffery An", "Mary Powers", "Bobby Yeager", "Medina Gomez", "Joseph Onghena"];
 let salaries = [154000, 153000, 156000, 156000, 154000, 130000, 130000, 137000, 1700000];
+let newperson = [];
+let newsalaries = [];
+
 
 
 function addSalary(){
@@ -15,8 +18,8 @@ function addSalary(){
         let page = document.getElementById("results");
         
     }else{
-    person.push(name.value);
-    salaries.push(salary)
+    newperson.push(name.value);
+    newsalaries.push(salary)
     
     }
     name.focus()
@@ -51,42 +54,30 @@ function displaySalary(){
     
     document.getElementById("resultText").innerHTML = "Salary Table"
 
-    //let table = "<tr><th>Name</th><th>Salary</th></tr>";
-    let newTr = document.createElement("tr")
-    let th = document.createElement("th")
-    let th2 = document.createElement("th")
-    let name = document.createTextNode("Name")
-    let sal = document.createTextNode("Salary")
-    th.appendChild(name);
-    th2.appendChild(sal);
-    newTr.appendChild(th);
-    newTr.appendChild(th2);
-
-    //results div
-    let page = document.getElementById("results");
-    //real table
-    let tabl = document.createElement("table");
-    tabl.appendChild(newTr)
-    for (let i = 0; i < salaries.length; i++) 
-    {  
-        //set rows and columns
-        let tr  = document.createElement("tr")
-        let first = document.createElement("td")
-        let second = document.createElement("td")
-        
-        let append1 =  document.createTextNode(person[i])
-        let append2 = document.createTextNode(salaries[i])
-        //apend the children
-        first.appendChild(append1)
-        second.appendChild(append2)
-        tr.appendChild(first)
-        tr.appendChild(second)
-        tabl.appendChild(tr)
-
-    }
-    let elem = document.createElement("table")
     
-    page.appendChild(tabl)
 
-     let table = document.createTextNode("table")
+     
+
+     document.getElementById("resultText").innerHTML = "Salary Table"
+
+    //let table = "<tr><th>Name</th><th>Salary</th></tr>";
+    let table = document.querySelector('table')
+    const guh = document.createDocumentFragment()
+    let i = 0
+    for(i; i < newperson.length; i++){
+        //create the new element
+        const tr = document.createElement('tr');
+        const td1 = document.createElement('td');
+        td1.append(newperson[i]);
+        const td2 = document.createElement('td');
+        td2.append(newsalaries[i]);
+        tr.append(td1);
+        tr.append(td2);
+        //append the new elements
+        guh.append(tr);
+        
+    }
+    table.append(guh);
+
+     
 }

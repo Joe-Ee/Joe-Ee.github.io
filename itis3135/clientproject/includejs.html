@@ -14,8 +14,25 @@
     <body>
         <div data-include="components/header.html"></div>
         <main>
-      
-      
+            <h2>Including Javascript Code in HTML</h2>
+            <p>
+                An important aspect of javascript is that it is interpreted in the browser. In order to include any javascript program into html you must have a pair of &ltscript&gt tags. These are important because it allows for the recognition of javascript code. 
+                Within the tag you can either link to a file or just put the code between the open and closing tags. Javascript files 
+            </p>
+            <h3>Using the innerhtml function in javascript</h3>
+            <p>
+                An easy way to change an html element's text is using the inner html function in javascript. This requires giving an element an id in the 
+                html file and then using that ID in the linked javascript to get and set the innerhtml of that element. the syntax looks like:
+                document.getElementById("name").innerHTML. This is how you get the content of the element. Below are some examples of how it can be used.
+
+
+            </p>
+            <figure>
+            <img width = 421 height = 172 src = "images/innerhtml.PNG" alt = "An example of innerHTML being used">
+            <figcaption>An example of innerHTML being used on a certain element's ID. In this example when the website is loaded on the user's side the text in theh1 will say "Changed texted"</figcaption>
+        </figure>
+
+        <h3></h3>
       </main>
       <div data-include="components/footer.html"></div>       
    
