@@ -32,7 +32,18 @@
             <figcaption>An example of innerHTML being used on a certain element's ID. In this example when the website is loaded on the user's side the text in theh1 will say "Changed texted"</figcaption>
         </figure>
 
-        <h3></h3>
+        <h3>Appending Elements to the DOM</h3>
+        <p>This way is usually regarded as 'better' than innerHTML because it is faster and it doesn't allow for += to append to it. 
+            In a complex javascript and HTML applicaiton appending elements to the DOM using append will be a bettersolution to changing the page. 
+            An example of this is shown below. 
+        </p>
+        <figure>
+        <img src = "images/append.PNG" width = 617 height = 386 alt = "Example of JS with the append function">
+        <figcaption>This code will end with a page that says "This text can change" and then have 10 lines under it that count up. 
+            The constant bruh represents the body of the text. The loop will loop 10 times in each loop it creates a constant p which is an paragraph element 
+            and then the text in the p element is changed to 'The number ' and then whatever i is. After, p is appended to the the body of the html element. 
+        </figcaption>
+    </figure>
       </main>
       <div data-include="components/footer.html"></div>       
    
