@@ -34,6 +34,7 @@ $(document).ready(function() {
         
     });
 });
+
     $("li:first-child a").focus
 });
     // set up the event handlers for each link
@@ -45,4 +46,3 @@ $(document).ready(function() {
 
 // move the focus to the first link
 
- // end ready
