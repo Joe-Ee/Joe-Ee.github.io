@@ -14,15 +14,21 @@ $(document).ready(function() {
 
         //on the click event for the image thubnails
     $(this).click(function(evt) {
+        //fadeout with duration of 10000 then the function next funtion will run
         $("#caption, #image").fadeOut(1000, 
             //callback function to fade out the 
             function(){
                 //change the img src to the one from the picture that was clicked on
             $("#image").attr("src", picture);
-            $("#caption").text(caption);
+           
             console.log(caption)
-            $("#caption, #image").fadeIn(1000);
+            //fade in the image then do a callback function to fade in the caption
+            $("#image").fadeIn(1000, function(){
+                $("#caption").text(caption)
+                $("#caption").fadeIn(1000)
+            });
         });
+
         //stop the link from loading the picture fully 
         evt.preventDefault();
         
