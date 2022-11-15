@@ -13,7 +13,7 @@ $(document).ready(function() {
     
 
         //on the click event for the image thubnails
-    $(this).click(function(evt) {
+    $(this).click(function(event) {
         //fadeout with duration of 10000 then the function next funtion will run
         $("#caption, #image").fadeOut(1000, 
             //callback function to fade out the 
@@ -30,7 +30,7 @@ $(document).ready(function() {
         });
 
         //stop the link from loading the picture fully 
-        evt.preventDefault();
+        event.preventDefault();
         
     });
 });
