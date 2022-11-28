@@ -2,14 +2,13 @@ $(document).ready(function() {
     
     $( "#chua" ).click(function() {
     $.getJSON("json_files/chua.json", function(data){ 
-        //go through it
+        //remove the current elements in main so that the new one will work
         $("#main").html("");
         $.each(data, function() { 
-            //append informaiton to the div with the ID of  "#team"
+            //append informaiton to the  main block
             $.each(this, function(key, item) { 
-                
                 $("main").append( 
-                    "<h1>" + item.title + "</h1>" + 
+                    "<h2>" + item.title + "</h2>" + 
                     "<h2>" + item.month + "</h2>" +  
                      
                     "<h3>" +item.speaker + "</h3>" +  
@@ -20,12 +19,13 @@ $(document).ready(function() {
     }); 
 });
 $( "#toobin" ).click(function() {
+    //remove the current elements in main
     $("#main").html("");
     $.getJSON("json_files/toobin.json", function(data){ 
-        //go through it
+        // 
         
         $.each(data, function() { 
-            //append informaiton to the div with the ID of  "#team"
+            //append informaiton to the  main block
             $.each(this, function(key, item) { 
                 
                 $("main").append( 
@@ -40,12 +40,13 @@ $( "#toobin" ).click(function() {
     }); 
 });
 $( "#sampson" ).click(function() {
+    //remove the current elemets in main
     $("#main").html("");
     $.getJSON("json_files/sampson.json", function(data){ 
-        //go through it
+        // 
         
         $.each(data, function() { 
-            //append informaiton to the div with the ID of  "#team"
+            //append informaiton to the  main block
             $.each(this, function(key, item) { 
                 
                 $("main").append( 
@@ -60,12 +61,13 @@ $( "#sampson" ).click(function() {
     }); 
 });
 $( "#sorkin" ).click(function() {
+    //remove hte current elements in main block
     $("#main").html("");
     $.getJSON("json_files/sorkin.json", function(data){ 
-        //go through it
+        // 
         
         $.each(data, function() { 
-            //append informaiton to the div with the ID of  "#team"
+            //append informaiton to the  main block
             $.each(this, function(key, item) { 
                 
                 $("main").append( 

@@ -2,9 +2,9 @@
 //when the document is opened
 $(document).ready(function(){ 
     //get json file 
-    $.getJSON("team.json", function(data){ 
+    $.getJSON("team.json", function(par){ 
         //go through it
-        $.each(data, function() { 
+        $.each(par, function() { 
             //append informaiton to the div with the ID of  "#team"
             $.each(this, function(key, item) { 
                 
