@@ -7,15 +7,19 @@
 	<link rel="stylesheet" href="styles/Activity14.css">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="scripts/Activity14.js"></script>
+	<link rel="stylesheet" href="styles/default.css">
 </head>
 
 <body>
-<header>
+
+	<div data-include="components/header.html"></div>  
+	
+	
+
+<main id = "main">
 	<img src="images/town_hall_logo.gif" alt="Town Hall logo" height="80">
 	<h1><a id="top">San Joaquin Valley Town Hall</a></h1>
 	<h2>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h2>
-</header>
-<main id = "main">
 	<h1>The Supreme Nine: Black Robed Secrets</h1>
 	<h2>October</h2>
 	<h3>Jeffrey Toobin</h3>
@@ -39,11 +43,8 @@
 		</ul>
 	</nav>
 </aside>
-<footer>
-	<p>&copy; 2017, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
-	<br/>
-	<a href="https://validator.w3.org/">HTML Validate</a>
-	<a href="https://jigsaw.w3.org/css-validator/">CSS Validate</a>
-</footer>
+<div data-include="components/footer.html"></div>       
+   
+<script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
