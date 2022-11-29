@@ -11,8 +11,9 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 h1{
     color: white;
     text-align: center;
-    margin-top: 200px;
+    
     font-family: 'Libre Baskerville', serif;
+    
 }
 div{
     border: white 5px solid;
@@ -20,5 +21,7 @@ div{
     width: 500px;
     margin: 25%;
     padding: 50px;
-
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
