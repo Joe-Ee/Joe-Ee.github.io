@@ -1,3 +1,9 @@
+$('#hii').keypress(function(event) {
+    if (event.keyCode == 13 || event.which == 13) {
+        heywhatsup();
+        console.log("HIII")
+    }
+});
 function heywhatsup(){
 const quote = document.querySelector('main');
 
