@@ -47,3 +47,8 @@ section{
     border-top: 3px solid rgb(29, 28, 28);
     width: 100%;
 }
+
+#slider li {
+    background: rgb(255, 231, 231);
+    
+}
