@@ -9,20 +9,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
         <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+        <link rel="stylesheet" href="jquery-ui.min.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
     </head>
     <body>
         <div data-include="components/header.html"></div>
         <main>
-            <h2>HTML Tutorial</h2>
+            <h2>HTML Tutorial and CSS Basics</h2>
             <figure>
                 <img src = "images/examplesetuphtmlpage.PNG" alt = "example image of how to setup an html page">
                 <figcaption>Example of basic HTML page structure. </figcaption>
                 </figure>
-            <p>HTML documents consist of tags that create the structure of the page. Most of the tags must have a matching &lt/&gt tag to end it. HTML elements usually consist of attribute value pairs inside the tag, and content between the 2 tags. </p>
+            <p>HTML documents consist of tags that create the structure of the page. Most of the tags must have a matching &lt;/&gt; tag to end it. HTML elements usually consist of attribute value pairs inside the tag, and content between the 2 tags. </p>
             <h3>Basic Document Setup</h3>
-            <p>All HTML documents start with the &lt!DOCTYPE html&gt tag. This declares that you are writing with html. The next tag after that is 
-                the &lthtml&gt tag. This tag has a closing tag that is the last line of the HTML document. A page is set up in the order of head, body, header, main, footer tags with 
+            <p>All HTML documents start with the &lt;!DOCTYPE html&gt; tag. This declares that you are writing with html. The next tag after that is 
+                the &lt;html&gt; tag. This tag has a closing tag that is the last line of the HTML document. A page is set up in the order of head, body, header, main, footer tags with 
                 header, main, and footer contained in the body tag. General basic page layout is pictured above.  
             </p>
             
@@ -35,13 +40,13 @@
                 <div style="float:left; width: 35%">
                     
                     <ul>
-                        <li>&lthead&gt This is where metadata on the website goes such as title, or links to stylesheets. The user does not see this</li>
-                        <li>&ltbody&gt This is where all of the viewable information on the page goes. All of the information shown on the page is stored within the body open and closing tag.</li>
-                        <li>&lth1&gt This tag is a main heading tag and is supposed to be used once per page. There are 6 types of headings total and they can be used by replacing the 1 in this tag with 2-6. Those are subheadings and are used for structural reasons and are titles or subtitles that you want to display on a page.</li>
-                        <li>&ltp&gt This is a paragraph tag and this is the type of tag that you would put a body of text in</li>
-                        <li>&lta&gt This tag is an anchor tag and is used for links</li>
-                        <li>&ltscript&gt This tag allows a user to embed a javascript script into a page. They can either put code between the 2 tags or link it to a js file. </li>
-                        <li>&lttitle&gt This tag allows the user to add a title to the page. This is shown in the top tab bar. </li>
+                        <li>&lt;head&gt; This is where metadata on the website goes such as title, or links to stylesheets. The user does not see this</li>
+                        <li>&lt;body&gt; This is where all of the viewable information on the page goes. All of the information shown on the page is stored within the body open and closing tag.</li>
+                        <li>&lt;h1&gt; This tag is a main heading tag and is supposed to be used once per page. There are 6 types of headings total and they can be used by replacing the 1 in this tag with 2-6. Those are subheadings and are used for structural reasons and are titles or subtitles that you want to display on a page.</li>
+                        <li>&lt;p&gt; This is a paragraph tag and this is the type of tag that you would put a body of text in</li>
+                        <li>&lt;a&gt; This tag is an anchor tag and is used for links</li>
+                        <li>&lt;script&gt; This tag allows a user to embed a javascript script into a page. They can either put code between the 2 tags or link it to a js file. </li>
+                        <li>&lt;title&gt; This tag allows the user to add a title to the page. This is shown in the top tab bar. </li>
         
                     </ul>
                 </div>
@@ -54,12 +59,38 @@
             </section>
             
             <div style="clear:both"></div>
-            <section></section>
+            <section>
+                <h3>CSS Basics</h3>
+                <div id="information">
+                    <ul>
+                        <li><a href="#css-info">CSS information</a></li>
+                        <li><a href="#css-basics">How to include CSS</a></li>
+                        <li><a href="#css-more">Syntax</a></li>
+                      </ul>
+                      <div id="css-info">
+                        <p>CSS stands for cascading style sheets and it is a basic way to style the HTML web pages. CSS helps a developer create a unique page that is accessible by all users. 
+                            It also allows for easy changes to be made to the website globally if set up in a well put together external style sheet.  </p>
+                      </div>
+                      <div id="css-basics">
+                        <p>There are a few ways to get css on a web page. The first way is to use an external style sheet. This is a separate file that has the CSS code that gets linked to the 
+                            HTML file using a link tag with a rel of stylesheet and href pointing to the file. The second time is putting the CSS between 2 style tags in the head. The last way is to 
+                            put the css within a style value within the individual tag that you want to customize. 
+                        </p>
+                      </div>
+                      <div id="css-more">
+                        <p>CSS works by targeting elements and changing properties of them. There are 3 ways to target elements which are: by tag, by class or by ID. to target a tag in css 
+                            you just use the tag name in the CSS modifider. To target a class you put a dot (.) before the class name and then put the properties down. To target an ID
+                            you put a # before the ID name and then put the properties. To put the properties down you put 2 curly braces and then put the property name you would like to change 
+                            and then a colon then the property style then a semicolon. for example, body{background-color: white;}
+                        </p>
+                    </div>
+                </div>
+            </section>
 
       
       </main>
       <div data-include="components/footer.html"></div>       
-   
+      <script src="scripts/tabs.js"></script>
       <script src="scripts/HTMLInclude.min.js"></script>
       <script src="scripts/defaultscripts.js"></script>
     </body>

@@ -1,4 +1,5 @@
 //Source: https://bxslider.com/options/
+//This is an example of a jquery plugin
 $(document).ready(function() {
     $("#slider").bxSlider({
         auto: true,
