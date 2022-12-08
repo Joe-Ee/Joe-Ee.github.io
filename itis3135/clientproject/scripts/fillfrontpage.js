@@ -8,9 +8,9 @@ $(document).ready(function(){
             
             $.each(this, function(key, item) { 
                 if(item.title == "History of Javascript"){
-                    id = "#html"
+                    id = "#htmal"
                 }else{
-                    id = "#js"
+                    id = "#jas"
                 }
                 $(id).append(
                     "<h2>" + item.title + "</h2>" +

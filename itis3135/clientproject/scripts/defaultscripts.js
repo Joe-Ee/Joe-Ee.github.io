@@ -16,11 +16,13 @@ function hide(arg){
     }
 }
 
-function write(){
+function writejs(){
+    console.log("hi")
     let user = document.getElementById("userInput").value;
     let main = document.querySelector("main");
     let p = document.createElement("p");
-    p.textContent = user;
+    p.textContent = "hi";
+    console.log("HI")
     main.append(p)
 }
 
