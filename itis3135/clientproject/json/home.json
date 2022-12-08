@@ -1,0 +1,18 @@
+{"Names":[
+	{
+		"title": "History of Javascript",
+		"description1": "Javascript was invented in 1995 as a scripting language for the netscape browser. It was originally created to validate input on the browser side. It was created similarly to java but as a more lightweight version so it could handle tasks on the client side. When it was created it was very popular and updated throughout its lifetime.",
+		"description2": "Javascript is now used to create complex functions on webapges. This code is processed in the browser on the user's computer which makes it very quick and lightweight. Without javascript all webpages would be static on the internet. 98% of the websites on the internet use javascript in some way. ",
+    "picture": "images/jssample.PNG",
+    "caption": "sample javascript code"
+		
+	},
+	{
+		"title": "History of HTML",
+		"description1": " HTML was original made in 1993 by Tim Berners-Lee. This language was based on Standard Generalized Mark-up Language which was a way to mark up text into differnet forms. A large difference between the 2 languages was the use of the anchor tag and href. These helped make this languge popular. After its creation it went through many different changes and in the early 2000s HTML 4 was made the standard.",
+		"description2": "We are currently using HTML 5 which was made in 2011 and is the final major HTML version and the standard for HTML. This became the standard in 2014  and approximately 90% of websites are built with HTML5. HTML5 is important because it was more consitent and makes it easy to design webpages. Another aspect with HTML5 is it ccaters to mobile use better which is very important because most internet access now is through modern phones.",
+    "picture": "images/introcode.PNG",
+    "caption": "HTML code with a table, div, unordered list, and h1 tag"
+	}
+]}
+
