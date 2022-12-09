@@ -9,14 +9,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
         <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
-        <link   rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    
-       <!-- include jQuery -->
-       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-       
-        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+/>
         
        
           
@@ -63,10 +62,16 @@
     </section>
     <div>
         <div style="float:left; width: 80%;">
-    <div class="cycle-slideshow" data-cycle-pause-on-hover="true">
-        <img src="images/include1.PNG" alt = "example of how to use the innerHTML version">
-        <img src="images/include2.PNG" alt = "example of appending element to the DOM">
-    </div>
+            <a            href="images/include2.png"   data-fancybox="gallery"     >
+          <img src="images/include2.PNG" alt = "example of appending element to the DOM">
+          </a>
+          <a
+          href="images/include1.png"
+          data-fancybox="gallery"
+        >
+        <img src="images/include1.PNG" alt = "example of appending element to the DOM">
+        </a>
+
 </div>
 </div>
     <div style="clear:both"></div>
