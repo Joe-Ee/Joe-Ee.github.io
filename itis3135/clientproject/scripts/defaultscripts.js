@@ -16,13 +16,17 @@ function hide(arg){
     }
 }
 
+//this takes in user input and puts it on the screen by appending to dom
 function writejs(){
-    console.log("hi")
+   
     let user = document.getElementById("userInput").value;
-    let main = document.querySelector("main");
+    const main = document.getElementById("user");
+    const fragment = document.createDocumentFragment();
+    
     let p = document.createElement("p");
-    p.textContent = "hi";
-    console.log("HI")
+    p.textContent = user;
+    fragment.append(p)
+    
     main.append(p)
 }
 
